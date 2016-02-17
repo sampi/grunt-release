@@ -82,6 +82,7 @@ module.exports = function(grunt){
       push: true,
       pushTags: true,
       npm: true,
+      silent: true,
       remote: 'origin',
       beforeReleaseTasks: [],
       afterReleaseTasks: [],
@@ -136,7 +137,7 @@ module.exports = function(grunt){
         deferred.resolve();
       }
       else {
-        var success = shell.exec(cmd, {silent:true}).code === 0;
+        var success = shell.exec(cmd, {silent: options.silent}).code === 0;
 
         if (success){
           grunt.log.ok(msg || cmd);

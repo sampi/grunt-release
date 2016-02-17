@@ -140,6 +140,7 @@ The following are all the release steps, you can disable any you need to:
 ```js
   release: {
     options: {
+      silent: false, //default: true
       bump: false, //default: true
       changelog: true, //default: false
       changelogText: '<%= version %>\n', //default: '### <%= version %> - <%= grunt.template.today("yyyy-mm-dd") %>\n'
