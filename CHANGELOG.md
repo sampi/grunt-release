@@ -1,3 +1,4 @@
+### 0.14.2 - 2016-02-17
 ### 0.14.1 - 2016-02-17
 ### 0.14.0 - 2016-02-17
 * Support task outut with `option.silent` (default true)
