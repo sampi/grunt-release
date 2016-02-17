@@ -324,6 +324,7 @@ module.exports = function(grunt){
       .then(ifEnabled('tag', tag))
       .then(ifEnabled('push', push))
       .then(ifEnabled('pushTags', pushTags))
+      .delay(5000) // wait for the GitHub API to update
       .then(ifEnabled('npm', publish))
       .then(ifEnabled('github', githubRelease))
       .then(ifEnabled('afterRelease', runTasks('afterRelease')))
