@@ -1,3 +1,6 @@
+### 0.14.0 - 2016-02-17
+* Support task outut with `option.silent` (default true)
+* Add 5s delay before using the GitHub API to make sure the tags are available for releases
 * Fix runtime error due to trailing comma (#132)
 * Add declaration for undeclared "vars" variable
 
