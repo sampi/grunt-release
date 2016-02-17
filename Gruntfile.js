@@ -23,9 +23,10 @@ module.exports = function(grunt) {
         pushTags: true,
         npm: true,
         npmtag: false,
+        silent: false,
         github: {
           repo: 'sampi/grunt-release',
-          accessTokenVar: 'GITHUB_ACCESS_TOKEN'
+          accessTokenVar: 'GH_ACCESS_TOK'
         }
       }
     },
@@ -39,7 +40,7 @@ module.exports = function(grunt) {
         pushTags: false,
         npm: false,
         npmtag: false,
-        github: false
+        silent: false
       },
       general: {
         options: {
