@@ -1,8 +1,8 @@
-# grunt-release
+# grunt-release-ts
 
-[![Build Status](https://travis-ci.org/sampi/grunt-release.svg?branch=master)](https://travis-ci.org/sampi/grunt-release)
-[![Dependency Status](https://david-dm.org/sampi/grunt-release.svg)](https://david-dm.org/sampi/grunt-release)
-[![devDependency Status](https://david-dm.org/sampi/grunt-release/dev-status.svg)](https://david-dm.org/sampi/grunt-release#info=devDependencies)
+[![Build Status](https://travis-ci.org/sampi/grunt-release-ts.svg?branch=master)](https://travis-ci.org/sampi/grunt-release-ts)
+[![Dependency Status](https://david-dm.org/sampi/grunt-release-ts.svg)](https://david-dm.org/sampi/grunt-release-ts)
+[![devDependency Status](https://david-dm.org/sampi/grunt-release-ts/dev-status.svg)](https://david-dm.org/sampi/grunt-release-ts#info=devDependencies)
 
 [Grunt](http://gruntjs.com) plugin for automating all the release steps of your node lib or bower component, with optional publishing to npm.
 
@@ -30,16 +30,16 @@ Done. No more GitHub issues from angry people reminding you how often you forget
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-release --save-dev
+npm install grunt-release-ts --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-release');
+grunt.loadNpmTasks('grunt-release-ts');
 ```
 
-## Using grunt-release
+## Using grunt-release-ts
 
 **Patch Release:**
 ```shell
@@ -76,7 +76,7 @@ Example: add `-alpha.0` to get something like `1.0.0-alpha.0`. Calling `grunt re
 
 **Releasing Unstable/Beta Versions**
 Sometimes it is useful to publish an 'unstable' or 'beta' version to `npm`, while leaving your last stable release as the default that gets installed on an `npm install`.
-`npm` accomplishes this using the `--tag myUnstableVersion` flag. You can enable this flag in grunt-release either by setting the `npmtag` option:
+`npm` accomplishes this using the `--tag myUnstableVersion` flag. You can enable this flag in grunt-release-ts either by setting the `npmtag` option:
 
 ```js
   release: {
@@ -113,7 +113,7 @@ The version to bump is set in the master file defined with option 'file' (defaul
 This version will be propagated to every additionalFiles.
 
 **Dry Run:**
-To see what grunt-release does, without really changing anything, use `--no-write` option.
+To see what grunt-release-ts does, without really changing anything, use `--no-write` option.
 
 ```shell
 grunt release --no-write
@@ -164,7 +164,7 @@ The following are all the release steps, you can disable any you need to:
       updateVars: [], // optional grunt config objects to update (this will update/set the version property on the object specified)
       github: {
         apiRoot: 'https://git.example.com/v3', // Default: https://github.com
-        repo: 'geddski/grunt-release', //put your user/repo here
+        repo: 'sampi/grunt-release-ts', //put your user/repo here
         accessTokenVar: 'GITHUB_ACCESS_TOKE', //ENVIRONMENT VARIABLE that contains GitHub Access Token
 
         // Or you can use username and password env variables, we discourage you to do so

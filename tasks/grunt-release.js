@@ -1,8 +1,9 @@
 /*
- * grunt-release
- * https://github.com/geddski/grunt-release
+ * grunt-release-ts
+ * https://github.com/sampi/grunt-release-ts
  *
  * Copyright (c) 2013 Dave Geddes
+ * Copyright (c) 2016 Daniel Spitzer
  * Licensed under the MIT license.
  */
 'use strict';
@@ -277,7 +278,7 @@ module.exports = function(grunt){
         .post(options.github.apiRoot + '/repos/' + options.github.repo + '/releases')
         .auth(username, password)
         .set('Accept', 'application/vnd.github.manifold-preview')
-        .set('User-Agent', 'grunt-release')
+        .set('User-Agent', 'grunt-release-ts')
         .send({
           'tag_name': tagName,
           name: tagMessage,
