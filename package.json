@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/geddski/grunt-release.git"
+    "url": "https://github.com/sampi/grunt-release.git"
   },
   "keywords": [
     "gruntplugin",
@@ -21,6 +21,9 @@
     "git"
   ],
   "author": "Dave Geddes",
+  "contributors": {
+    "name": "Daniel Spitzer"
+  },
   "license": "MIT",
   "dependencies": {
     "shelljs": "^0.5.1",
