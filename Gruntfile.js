@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         npm: true,
         npmtag: false,
         github: {
-          repo: 'geddski/grunt-release',
+          repo: 'sampi/grunt-release',
           accessTokenVar: 'GITHUB_ACCESS_TOKEN'
         }
       }
