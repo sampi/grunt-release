@@ -1,5 +1,7 @@
 # grunt-release-ts
 
+[![Join the chat at https://gitter.im/sampi/grunt-release-ts](https://badges.gitter.im/sampi/grunt-release-ts.svg)](https://gitter.im/sampi/grunt-release-ts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/sampi/grunt-release-ts.svg?branch=master)](https://travis-ci.org/sampi/grunt-release-ts)
 [![Dependency Status](https://david-dm.org/sampi/grunt-release-ts.svg)](https://david-dm.org/sampi/grunt-release-ts)
 [![devDependency Status](https://david-dm.org/sampi/grunt-release-ts/dev-status.svg)](https://david-dm.org/sampi/grunt-release-ts#info=devDependencies)
